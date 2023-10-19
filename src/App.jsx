@@ -11,7 +11,7 @@ function App() {
       </header>
       <div className="dimg">
         <img
-          src="./src/assets/edie-homepage-master/heroImage.jpg"
+          src="./src\assets\edie-homepage-master\heroImage.jpg"
           className="fimg"
         />
       </div>

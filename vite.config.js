@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base : "https://github.com/hectorLandaez/practica12"
+  base : "https://hectorLandaez.github.io/practica12/"
 })

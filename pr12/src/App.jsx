@@ -1,35 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
+import "./App.css";
+import Nav from "./components/Nav";
+import FormikDoc from "./components/FormikDoc";
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <Nav></Nav>
+      <header>
+        <h5>Unhappy with your website?</h5>
+        <h1> We create beautiful and fast web services</h1>
+      </header>
+      <div className="dimg">
+        <img
+          src="./src/assets/edie-homepage-master/heroImage.jpg"
+          className="fimg"
+        />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+      <div className="seconddiv">
+        <h1> Story, Emotion and purpose</h1>
         <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+          {" "}
+          We help transform your ideas into real world applications that will
+          outperform your toughest competition and help you achieve your
+          strategic goals in short period of time.
         </p>
+        <FormikDoc></FormikDoc>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
